@@ -20,7 +20,7 @@ const directives = {
   watermark,
 }
 
-export const setup = {
+export const directive = {
   install(app: App) {
     Object.entries(directives).forEach(([key, directive]) => {
       app.directive(kebabToCamel(key), directive)

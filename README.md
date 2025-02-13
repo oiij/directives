@@ -1,24 +1,22 @@
-# library-starter
+# @oiij/directives
 
 Features:
 
 - Bundle with [tsup](https://github.com/egoist/tsup)
 - Test with [vitest](https://vitest.dev)
 
-# Usage
-
-### 本地包测试
-
-当前目录下执行：
+## Usage
 
 ```bash
-pnpm link --global --dir=./
+pnpm add @oiij/directives
 ```
 
-目标目录：
+```ts
+import { directive } from '@oiij/directives'
+import { createVueApp } from 'vue'
+import App from './App.vue'
 
-```bash
-pnpm link --global <package name>
+createApp(App).use(directive).mount('#app')
 ```
 
 ## License

@@ -6,5 +6,5 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   external: ['vue'],
   dts: true,
-  minify: true,
+  minify: false,
 })

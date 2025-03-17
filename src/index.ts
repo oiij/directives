@@ -1,5 +1,6 @@
 import type { App } from 'vue'
 import { kebabToCamel } from '@oiij/utils/string'
+import { arrayBufferSrc } from './arrayBufferSrc'
 import { clickOutside } from './clickOutside'
 import { copy } from './copy'
 import { debounce } from './debounce'
@@ -10,6 +11,7 @@ import { throttle } from './throttle'
 import { watermark } from './watermark'
 
 const directives = {
+  arrayBufferSrc,
   clickOutside,
   copy,
   debounce,

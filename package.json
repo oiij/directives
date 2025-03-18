@@ -1,7 +1,7 @@
 {
   "name": "@oiij/directives",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "author": "oiij",
   "license": "MIT",
@@ -49,8 +49,7 @@
     "cz": "czg",
     "commit": "git pull && git add -A && pnpm cz && git push",
     "link": "pnpm link --global",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
   },
   "peerDependencies": {
     "vue": "^3.5.13"

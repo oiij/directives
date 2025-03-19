@@ -25,6 +25,12 @@ export const lazyLoad: Directive = {
     target._lazy_load_observer.observe(target)
   },
   updated(target: TargetElement, binding: DirectiveBinding<BindingValue>) {
+    if (!isString(binding.value)) {
+      return console.warn('LazyLoad: value is not a string')
+    }
+    if (binding.oldValue === binding.value) {
+      return
+    }
     setValue(target, binding)
   },
   unmounted(target: TargetElement) {
